@@ -1,0 +1,26 @@
+{
+  "name": "AppUsageMonitor",
+  "id": "AppUsageMonitor",
+  "version": "1.0.0",
+  "description": "儿童游戏时间监控插件",
+  "_dp_type": "nativeplugin",
+  "_dp_nativeplugin": {
+    "android": {
+      "plugins": [
+        {
+          "type": "module",
+          "name": "AppUsageMonitor",
+          "class": "com.example.childgamecontrol.plugin.AppUsageMonitorPlugin"
+        }
+      ],
+      "integrateType": "aar",
+      "minSdkVersion": 21,
+      "permissions": [
+        "android.permission.PACKAGE_USAGE_STATS",
+        "android.permission.QUERY_ALL_PACKAGES",
+        "android.permission.KILL_BACKGROUND_PROCESSES",
+        "android.permission.CALL_PHONE"
+      ]
+    }
+  }
+}
